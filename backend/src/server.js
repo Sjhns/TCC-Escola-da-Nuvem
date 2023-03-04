@@ -5,9 +5,9 @@ const cors = require('cors')
 require("dotenv").config();
 
 const corsOptions = {
-  origin: "",
+  origin: "https://tcc-aws-2.vercel.app",
 }
-app.use(cors())
+app.use(cors(corsOptions))
 
 app.use(express.json())
 app.use(router)

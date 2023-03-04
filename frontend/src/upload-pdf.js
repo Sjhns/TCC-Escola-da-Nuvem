@@ -8,7 +8,7 @@ function uploadPDF() {
     formData.append('file', file);
     
 
-    fetch('http://localhost:3000/upload', {
+    fetch('tcc-escola-da-nuvem-production.up.railway.app/upload', {
       method: 'POST',
       body: formData
     })
