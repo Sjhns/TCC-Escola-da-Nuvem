@@ -9,5 +9,11 @@ router.post("/upload", S3Upload.single("file"),(req, res) =>{
     })
 });
 
+router.get("/", (req, res) =>{
+    return res.status(200).json({
+        mensagem: "Rota raiz.",
+    })
+});
+
 module.exports = router;
 

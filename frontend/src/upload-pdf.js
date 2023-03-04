@@ -8,7 +8,7 @@ function uploadPDF() {
     formData.append('file', file);
     
 
-    fetch('tcc-escola-da-nuvem-production.up.railway.app/upload', {
+    fetch('tcc-escola-da-nuvem-production.up.railway.app:3000/upload', {
       method: 'POST',
       body: formData
     })
